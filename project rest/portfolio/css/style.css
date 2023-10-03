@@ -1,0 +1,355 @@
+* {
+    font-family: 'Oswald', sans-serif;
+}
+html, body {
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    background-image: url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right center;
+}
+header {
+    width: 100%; 
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+   
+
+}
+.fixed-container {
+    margin-top: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
+    width: 840px;
+    margin-right: auto;
+    margin-left: auto;
+    
+}  a {
+    margin-right: 20px;
+    text-decoration: none;
+    color:white;
+    padding: 10px;
+    transition: .5s;
+}
+nav a:hover {
+    background-color: black;
+    color: white;
+}
+.call-button {
+    background-color: black;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    color: white;
+}
+.first-class {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info-button { 
+ background-color: black;
+ border: 1px solid black;
+ border-radius: 10px;
+ padding-top: 10px;
+ padding-right: 40px;
+ padding-left: 40px;
+ padding-bottom: 10px;
+ color: white;
+}
+.info-button a {
+    color: white;
+}
+.info-button a:hover {
+    text-decoration: none;
+    font-size: 110%;
+}
+.first-class h1 {
+    font-size: 24px;
+}
+.first-class h1 a:hover {
+    text-decoration: underline;
+}
+
+.second-class h2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.second-class h2 a:hover {
+    text-decoration: none;
+    border-radius: 16px;
+    font-size: 110%;
+    background-color: black;
+    transition: .5s;
+    color: white;
+}
+.services-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    color: white;
+}
+.services-container > div {
+    padding-top: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100px;
+}
+.service-1 { 
+    background-image: url(../img/browser.png);
+    background-size: 90px 90px;
+    background-color: rgba(22, 21, 21, 0.8);
+    border-radius: 10px;
+    width: 180px;
+    height: 90px;
+    align-items: center;
+}
+.service-1 p {
+    margin-top: 40px;
+    text-align: center;
+}
+.service-1:hover {
+    font-size: 110%;
+    cursor: pointer;
+    transition: 0.5s;
+    box-shadow: 12px 12px 25px 1px rgba(12, 12, 12, 0.3);
+}
+.service-2 {
+    background-image: url(../img/javascript.png);
+    background-position: center;
+    background-size: 90px 90px;
+    background-color: rgba(22, 21, 21, 0.8);
+    border-radius: 10px;
+    width: 180px;
+    height: 90px;
+    align-items: center;
+}
+.service-2:hover {
+    font-size: 110%;
+    cursor: pointer;
+    transition: 0.5s;
+    box-shadow: 12px 12px 25px 1px rgba(12, 12, 12, 0.3);
+}
+.service-2 p {
+    margin-top: 40px;
+    text-align: center;
+}
+.service-3 { 
+    background-image: url(../img/react.png);
+    background-size: 90px 90px;
+    background-color: rgba(22, 21, 21, 0.8);
+    border-radius: 10px;
+    width: 180px;
+    height: 90px;
+
+    align-items: center;
+}
+.service-3 p {
+    margin-top: 40px;
+    text-align: center;
+}
+.service-3:hover {
+    font-size: 110%;
+    cursor: pointer;
+    transition: 0.5s;
+    box-shadow: 12px 12px 25px 1px rgba(12, 12, 12, 0.3);}
+
+.pf-block {
+    color: white;
+}
+
+.pf-block h2 {
+    display: flex;
+    justify-content: center;
+}
+.bk-cont {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+.bk-cont > div {
+    padding-top: 110px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100px;
+}
+.bk-1 {
+    background-image: url(../img/responsibility.png);
+    background-size: 90px 90px;
+    background-color: rgba(22, 21, 21, 0.8);
+    border-radius: 10px;
+    width: 180px;
+    height: 130px;
+
+    align-items: center;
+}
+.bk-1 p {
+    margin-top: 60px;
+    text-align: center;
+}
+.bk-1:hover {
+    font-size: 110%;
+    cursor: pointer;
+    transition: 0.5s;
+    box-shadow: 12px 12px 25px 1px rgba(12, 12, 12, 0.3);
+}
+.block-2 {
+    background-image: url(../img/programmer.png);
+    background-size: 90px 90px;
+    background-color: rgba(22, 21, 21, 0.8);
+    border-radius: 10px;
+    width: 180px;
+    height: 130px;
+}
+.block-2 p {
+    text-align: center;
+    margin-top: 60px;
+}
+.block-2:hover {
+    font-size: 110%;
+    cursor: pointer;
+    transition: 0.5s;
+    box-shadow: 12px 12px 25px 1px rgba(12, 12, 12, 0.3);}
+.block-3 { 
+    background-image: url(../img/translation.png);
+    background-size: 90px 90px;
+    background-color: rgba(22, 21, 21, 0.8);
+    background-position: center;
+    border-radius: 10px;
+    width: 180px;
+    height: 130px;
+}
+.block-3 p {
+    text-align: center;
+    margin-top: 60px;
+}
+.block-3:hover {
+    font-size: 110%;
+    cursor: pointer;
+    transition: 0.5s;
+    box-shadow: 12px 12px 25px 1px rgba(12, 12, 12, 0.3);
+}
+.popup-container {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background-color: #000000ba;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.popup {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    width: 200px;
+    position: relative;
+}
+.popup h2 {
+    margin-top: 0px;
+
+}
+.popup input {
+    display: block;
+    width: 100px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+.popup button {
+    margin-top: 10px;
+display: block;
+border-radius: 10px;
+background-color: white;
+padding: 10px;
+align-items: center;
+}
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    width: 5px;
+    height: 2px;
+    background-image: url(../img/close.gif);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.close-button a:hover {
+    background-size: 90%;
+}
+
+
+
+.fastfood {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.fastfood > div {
+    padding-top: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100px;
+}
+
+.footer {
+    margin-top: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
+    width: 840px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: rgba(24, 23, 23, 0.5);
+    width: 90%;
+    color: white;
+}
+.footer h2 {
+    text-align: center;
+}
+.allrights {
+    display: flex;
+    
+
+}
+.socials {
+    position: relative;
+    display: flex;
+    margin-bottom: 30px;
+    margin-top: -10px;
+}
+.footerinfo {
+    display: flex;
+    justify-content: space-between;
+}
+.photo {
+
+    width: 200px;
+    height: 200px;
+  
+
+}
+
+
+.about img {
+    margin-top: -150px;
+}
+
+.first-class h3 {
+    color: white;
+}

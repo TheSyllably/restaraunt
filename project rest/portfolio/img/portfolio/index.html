@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script> 
+    $(function() {
+        $('.open-popup').on('click', function() {
+            $('.popup-container').css('display', 'flex');
+        });
+
+        $('.close-button').on('click', function() {
+            $('.popup-container').css('display', 'none');
+        });
+        $('.light-button').on('click', function() {
+            $('.popup-container').css('display', 'none');
+        });
+        $('.send-button').on('click', function() {
+               let name = $('input[name="name"]').val();
+               let request = {
+                'name': name,
+               };
+               $.post('api.php', request, function(response){ 
+if (respone =='1') {
+    $('input[name="name"]').val('');
+    $('popup-container').css('display','none');
+} else { 
+    alert('Something go wrong');
+}
+               });
+        });
+    });
+    </script>
+</head>
+<body>
+    <div class="popup-container">
+        <div class="popup"> 
+            <a href="#" class="close-button"></a>
+        <h2> Привет! Рад тебя видеть</h2>
+        <input type="text" name="name" placeholder="Your Name"> Write your name </input>
+        <button class="light-button send-button "> <a href="#"> OK </a></button>
+        </div>
+    </div>
+    <header class="fixed-container">
+            <nav> 
+                <a href ="#ftr"> Ссылки</a>
+                <a href ="#"> Моя биография</a>
+                <a href ="#"> Портфолио</a>
+            </nav>
+             <div> 
+                Привет!
+               &nbsp;&nbsp;&nbsp;&nbsp;
+               <button class="call-button open-popup"> <a href="#"> Написать мне </a></button>
+             </div> 
+           
+        </header>
+<section class="fixed-container first-class"> 
+    &nbsp;
+    &nbsp;
+     <h1> <a href="@">Евгений Максимов </a></h1>
+     <div class="about">
+        <h3> Начинающий frontend-разработчик </h2>
+            <p> <button class="info-button"><a href="#">Узнать больше </a></button> </p>
+     </div>
+     
+  
+    
+     </section>
+<section class="fixed-container second-class"> 
+    <h2> <a href="">Что я умею? </a></h2>
+    <div class="services-container"> 
+       <div class="service-1"> <p> Вёрстка сайтов </p> </div>
+       <div class="service-2"> <p>Работа с JavaScript </p> </div>
+       <div class="service-3"> <p> Работа с фреймворком React</p> </div>
+    </div>
+</section>
+<section class="fixed-container pf-block"> 
+    <h2> <a href=""> Коротко обо мне: </a></h2>
+    <div class="bk-cont">
+        <div class="bk-1"> <p>Ответственный, усердный труженник </p></div>
+        <div class="block-2"> <p>Обожаю программирование</p></div>
+        <div class="block-3"> <p>Знаю 2 языка - английский (свободно) и испанский (продолжающий)</p></div>
+    </div>
+</section>
+ <section class="footer">
+    <div id="ftr">
+        <h2> Вы можете найти меня в соцсетях:</h2>
+    <div class="footerinfo">
+    <div class="allrights">
+        Все права защищены, 2023.
+    </div>
+    <div class="socials">
+        <a href="https://vk.com/id172003392"><img  src="img/VK.jpg" width="30" height="30" alt="VK"> </a> 
+        <a href="https://github.com/TheSyllably"><img src="img/GitHubpng.png" width="30" height="30" alt="GitHub"> </a>
+    </div>
+</div>
+    </div>
+    
+ </section>
+</body>
+</html>

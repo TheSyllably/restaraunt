@@ -114,7 +114,7 @@ body {
     width: 61px;
     background-color: white;
     top: 161px;
-    left: 190px;
+    left: 210px;
 }
 .header-btn {
     font-family: 'Anton', sans-serif;
@@ -132,7 +132,7 @@ color: white;
 }
 .header-btn a:hover {
     transition: .5s;
-    font-size: 27px;
+    font-size: 23px;
     color: rgb(229, 142, 19);
 }
 .cards-holder { 
@@ -286,6 +286,11 @@ background-color: #ffff;
     text-decoration: none;
     padding: 14px 18px;
     font-weight: 700;
+    transition: .5s;
+ }
+ .right-button a:hover {
+    transition: .5s;
+    font-size: 14px;
  }
 
 .dishes-title {
@@ -368,6 +373,10 @@ background-color: #ffff;
     padding: 14px 35px;
     text-decoration: none;
     color: white;
+}
+.menu-button a:hover {
+    transition: .7s;
+    font-size: 16px;
 }
 .price {
     position:absolute;
@@ -502,8 +511,46 @@ button {
     outline: none;
     background-color: transparent;
 }
+
 .disp {
     display: none;
+}
+
+.modal {
+    display: none;
+    inset: 0;
+    z-index: 9999;
+    position: fixed;
+    background-color: rgba(249, 249, 249, 0.334);
+    cursor: pointer;
+    overflow-y: auto;
+}
+
+.modal-content {
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    height: 400px;
+    margin: auto;
+    border-radius: 20px;
+    background-color: rgb(6, 6, 6);
+    cursor: default;
+}
+
+.modal__text {
+    color:#FF7400
+}
+
+.modal__close {
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    color: #FF7400;
+    margin-top: 10px;
+    left: 10px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 22px;
 }
 @media (max-width:1500px) {
     .gallery-content {
